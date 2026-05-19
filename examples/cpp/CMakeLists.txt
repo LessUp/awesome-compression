@@ -9,7 +9,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 include(CTest)
 include(cmake/Dependencies.cmake)
 
-add_library(example_common src/common.cpp)
+add_library(example_common STATIC src/common.cpp)
 target_include_directories(example_common PUBLIC src)
 
 function(add_compression_example target source)
