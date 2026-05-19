@@ -30,7 +30,7 @@ else()
 endif()
 
 if(AWESOME_COMPRESSION_ENABLE_BSC)
-  add_compression_example(bsc_example src/bsc_example.cpp bsc)
+  add_compression_example(bsc_example src/bsc_example.cpp bsc::libbsc)
 else()
   message(STATUS "BSC example is disabled. Reconfigure with -DAWESOME_COMPRESSION_ENABLE_BSC=ON to try it.")
 endif()
