@@ -1,0 +1,25 @@
+# Node / VitePress
+node_modules/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+
+# CMake / C++
+build/
+cmake-build-*/
+examples/cpp/build/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+
+# Generated binaries and archives
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
