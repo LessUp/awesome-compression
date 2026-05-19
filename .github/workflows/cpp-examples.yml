@@ -1,0 +1,21 @@
+name: C++ Examples
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y cmake ninja-build liblzma-dev
+      - name: Configure
+        run: cmake -S examples/cpp -B examples/cpp/build -G Ninja -DCMAKE_BUILD_TYPE=Release
+      - name: Build
+        run: cmake --build examples/cpp/build
+      - name: Test
+        run: ctest --test-dir examples/cpp/build --output-on-failure
