@@ -1,0 +1,6 @@
+compression compression compression
+dictionary coding entropy coding block sorting context modeling
+zstd lzma bsc lz4 zlib brotli
+The quick brown fox jumps over the lazy dog.
+The quick brown fox jumps over the lazy dog.
+The quick brown fox jumps over the lazy dog.
