@@ -83,9 +83,37 @@ export default defineConfig({
       description: 'Compression algorithm notes and C++ examples',
       themeConfig: {
         nav: [
-          { text: 'Home', link: '/en/' },
+          { text: 'Basics', link: '/en/guide/compression-basics', activeMatch: '/en/guide/' },
+          { text: 'Algorithms', link: '/en/algorithms/zstd', activeMatch: '/en/algorithms/' },
+          { text: 'Examples', link: '/en/examples/cpp-overview', activeMatch: '/en/examples/' },
           { text: '中文', link: '/zh/' }
-        ]
+        ],
+        sidebar: {
+          '/en/guide/': [
+            {
+              text: 'Guide',
+              items: [
+                { text: 'Compression Basics', link: '/en/guide/compression-basics' }
+              ]
+            }
+          ],
+          '/en/algorithms/': [
+            {
+              text: 'Algorithm Notes',
+              items: [
+                { text: 'ZSTD', link: '/en/algorithms/zstd' }
+              ]
+            }
+          ],
+          '/en/examples/': [
+            {
+              text: 'C++ Examples',
+              items: [
+                { text: 'Overview', link: '/en/examples/cpp-overview' }
+              ]
+            }
+          ]
+        }
       }
     }
   },
