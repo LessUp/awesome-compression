@@ -20,6 +20,12 @@ compile_commands.json
 *.dll
 *.exe
 
+# BSC build directory
+examples/cpp/build-bsc/
+
+# Test logs
+*.log
+
 # OS / editor
 .DS_Store
 .idea/
